@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decipher</title>
+
+    <!-- PNG Export -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+    ></script>
+
+    <!-- GIF Export -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gif.js.optimized/dist/gif.js"
+    ></script>
+
+    <!-- Worker (must be inside public/) -->
+    <script defer src="/gif.worker.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- React app -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
